@@ -1,0 +1,34 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.nav-menu {
+    text-transform: uppercase;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000
+}
