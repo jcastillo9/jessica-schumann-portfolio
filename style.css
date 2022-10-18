@@ -5,6 +5,24 @@
     padding: 0;
 }
 
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right:1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -31,4 +49,20 @@ h1 {
 .nav-link {
     text-decoration: none;
     color: #000000
+}
+
+@media (max-width: 760px) {
+    .toggle-button {
+        display: flex;
+        z-index: 7;
+    }  
+
+    .nav-menu {
+        flex-direction: column;
+        padding:0;
+        flex-direction: column;
+        border: none;
+        width:100%;
+        display: none;
+    }
 }
