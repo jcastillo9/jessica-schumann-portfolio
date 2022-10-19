@@ -1,0 +1,29 @@
+.about {
+    border: 2px green solid;
+    padding-top: 162px;
+}
+
+.about-landing {
+    border: 2px purple solid;
+    display: flex;
+
+}
+.about-img {
+    border: 2px red solid;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+}
+
+.about-info {
+    /* display: flex;
+    align-items: center; */
+    width: 50vw;
+    border: 2px blue solid
+}

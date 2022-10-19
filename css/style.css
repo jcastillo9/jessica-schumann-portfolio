@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cedarville+Cursive&family=Lobster+Two&family=Sacramento&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cedarville+Cursive&family=Lobster+Two&family=Montserrat:wght@500&family=Sacramento&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,15 +6,7 @@
     padding: 0;
 }
 
-body {
-    /* background-color: rgb(255, 225, 229); */
-}
-
 .nav-container {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding: 20px 10%; */
     position: fixed;
     width: 100%;
     z-index: 8;
@@ -26,7 +17,8 @@ body {
 .name-nav {
     font-size: 25px;
     font-family: 'Sacramento', cursive;
-    padding: 25px 10%;
+    padding: 20px 10%;
+    letter-spacing: 1.25px;
 }
 .name-link {
     text-decoration: none;
@@ -38,7 +30,7 @@ body {
 }
 .nav-menu { 
     padding: 10px 10%;   
-    font-family: 'Alata', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
@@ -75,14 +67,16 @@ body {
     display:flex;
     width: 100vw;
     height: 80vh;
-    padding-top: 169px;
+    padding-top: 152px;
+    margin-bottom: 1.5rem;
 }
 
 .landing-text {
+    font-family: 'Montserrat', sans-serif;
     display: block;
     align-items: center;
     width: 55%;
-    background-color: #F5D7E3;
+    /* background-color: #F5D7E3; */
     margin: 3rem 1rem 3rem 0;
     /* border: 2px red solid; */
 }
@@ -101,7 +95,7 @@ body {
     border-bottom-style: solid;
     border-bottom-color: #a7a5a5;
     border-bottom-width: 10px;
-    border: 2px #ffffff solid;
+    border: 2px #DA6C98 solid;
 }
 
 .landing-image {
@@ -112,7 +106,7 @@ body {
 
 .image-holder{
     margin: auto;
-    width: 400px;
+    width: 350px;
     height: 400px;
 }
 
@@ -124,7 +118,7 @@ body {
 
 .my-work-title {
     font-size: 20px;
-    padding: 3rem; 
+    padding: 2rem; 
     margin: 0 5rem;
     text-align: center;
     background-color: #F5D7E3;
@@ -133,26 +127,51 @@ body {
 
 .work-card {
     margin: 1rem 2rem 3rem 2rem;
+    width: 405px;
+    height: 650px;
     /* border: 2px solid purple; */
 }
 
-.work-card img:hover {
+.work-img:hover {
     transform: translateY(-10px);
 }
 
-.work-card img {
+.work-img {
     transition: transform 250ms;
-    width: 500px;
-    height: 500px;
-    object-fit: none;
+    width: 405px;
+    height: 605px;
+    object-fit: cover;
     object-position: center;
 }
+
+.work-img img {
+    width: 400px;
+    height: 600px;
+    border-radius: 2px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 18px;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+.work-text {
+    text-align: center;
+}
+
 .my-work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    /* padding: 1rem; */
     margin: 0 5rem;
     background-color: #F5D7E3;
     /* border: 2px green solid; */
