@@ -184,16 +184,52 @@
         z-index: 7;
     }  
 
+    .nav-container {
+        display: block;
+    }
+
+    .name-nav {
+        z-index: 1;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        height: 100%;
+
+    }
+
     .nav-menu {
         flex-direction: column;
-        padding:0;
-        flex-direction: column;
-        border: none;
         width:100%;
         display: none;
     }
 
+    .nav-item {
+        text-align: center;
+        margin: .5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-menu.active {
+        z-index: 8;
+       display: flex;
+    }
+
     .landing-page {
         display:block;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        text-align: left;
+    }
+
+    .nav-menu {
+        width: 100%;
     }
 }
