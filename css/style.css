@@ -218,7 +218,7 @@
 
     .landing-page {
         /* border: 2px red solid; */
-        flex-direction: column-reverse;
+        flex-direction: column;
         display: block;
         padding-top: 113px;
         margin-bottom: 0;
@@ -260,4 +260,30 @@
     .nav-container {
         text-align: left;
     }
+
+    .landing-page {
+        border: 2px solid red;
+        margin-bottom: 0;
+    }
+
+    .landing-text {
+        padding: 1rem;
+        border: 2px solid blue;
+    }
+
+    .description {
+        margin: 1.5rem 3rem;
+        font-size: 12px;
+    }
+
+    .landing-image {
+        height: 70%;
+        border: 2px solid green;
+    }
+
+     .image-holder {
+        width: 250px;
+        height: 300px;
+    }
+
 }
