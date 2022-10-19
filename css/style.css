@@ -262,13 +262,11 @@
     }
 
     .landing-page {
-        border: 2px solid red;
         margin-bottom: 0;
     }
 
     .landing-text {
         padding: 1rem;
-        border: 2px solid blue;
     }
 
     .description {
@@ -278,7 +276,6 @@
 
     .landing-image {
         height: 70%;
-        border: 2px solid green;
     }
 
      .image-holder {

@@ -37,11 +37,9 @@
     
     .about-landing {
         display: block;
-        border: 2px green solid;
     }
     
     .about-img{
-        border: 2px red solid;
         width: 100vw;
         height: 40vh;
         display: flex;
@@ -55,7 +53,6 @@
     }
     
     .about-info { 
-        border: 2px blue solid;
         width: 100vw;
         height: 50vh;
         font-size: 12px;
