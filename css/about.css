@@ -8,10 +8,17 @@
     align-items: center;
 }
 
+.about-title {
+    text-transform: uppercase;
+}
 .about-info {    
     width: 50vw;
-    display: flex;
-    padding:5rem;
+    display: block;
+    padding:4rem;
+    color: white;
+    background-color: #cf9fb2;
+    border-radius: 2px;
+    margin-left: 2rem;
 }
 
 .about-img{
@@ -35,5 +42,6 @@
 
     .about-info, .about-img {
         width: 100%;
+        margin-left: 0;
     }
 }
