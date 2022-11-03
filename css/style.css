@@ -7,47 +7,62 @@
 }
 
 .nav-container {
+    display: flex;
     position: fixed;
     width: 100%;
     z-index: 8;
-    text-align: center;
     background: white;
+    margin: 0;
+    background-color: #cf9fb2;
 }
 
 .name-nav {
     font-size: 25px;
     font-family: 'Sacramento', cursive;
     padding: 20px 10%;
+    width: 40%;
 }
 .name-link {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.nav {
+    width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .nav-bar {
-    background-color: #F5D7E3;
+    display: flex;
 }
+
 .nav-menu { 
-    padding: 10px 10%;   
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-}
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly; 
+} 
 
 .nav-item {
     display: inline-block;
-    padding: 0 20px;
     list-style-type: none;
+    
 }
 
 .nav-link {
     text-decoration: none;
-    color: black;
+    color: white;
+    line-height: 2em;
 }
 
 .toggle-button {
     position: absolute;
-    top: 2rem;
-    right:1.5rem;
+    top: 2.75rem;
+    right:2.25rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -58,41 +73,41 @@
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: #000000;
+    background-color: white;
     border-radius: 10px;
 }
 
 .landing-page {
     display:flex;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     padding-top: 152px;
     margin-bottom: 1.5rem;
 }
 
 .landing-text {
     font-family: 'Montserrat', sans-serif;
-    display: block;
-    align-items: center;
+    display: inline-block;
     width: 55%;
-    margin: 3rem 1rem 3rem 0;
+    margin: auto;
 }
 
 .description {
+    width: 100%;
     font-size: 20px;
-    margin: 8rem 8rem 4rem 4rem;
+    padding: 3rem 3rem 3rem 3rem;
     text-align: center;
-    color: #DA6C98;
+    color: #d389a7;
     text-transform: uppercase;
-    /* border: 2px blue solid; */
 }
 
 .horizontal-bar {
-    width: 90%;
+    width: 95%;
+    padding: auto;
     border-bottom-style: solid;
     border-bottom-color: #a7a5a5;
     border-bottom-width: 10px;
-    border: 2px #DA6C98 solid;
+    border: 2px #d389a7 solid;
 }
 
 .landing-image {
@@ -108,44 +123,41 @@
 }
 
 .portfolio {
-    /* background-color: #F5D7E3; */
-    /* margin: 0 4rem; */
-    /* border: 2px red solid; */
+    background-color: #cf9fb2;
+    margin: auto;
+    width: 90%;
 }
 
 .my-work-title {
     font-size: 20px;
     padding: 2rem; 
-    margin: 0 5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
     text-align: center;
-    background-color: #F5D7E3;
-    /* border: 2px blue solid;  */
+    color:white;
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
 }
 
 .work-card {
-    margin: 1rem 2rem 3rem 2rem;
-    width: 405px;
-    height: 650px;
-    /* border: 2px solid purple; */
+    margin: .5rem;    
+    width: 258px;
+    height: 450px;
+
 }
 
 .work-img:hover {
     transform: translateY(-10px);
 }
 
-.work-img {
-    transition: transform 250ms;
-    width: 405px;
-    height: 605px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.work-img img {
-    width: 400px;
-    height: 600px;
+.work-picture {
+    width: 250px;
+    height: 340px;
     border-radius: 2px;
-    border: 4px black solid;
 
 }
 
@@ -165,18 +177,6 @@
     text-align: center;
 }
 
-.my-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* padding: 1rem; */
-    margin: 0 5rem;
-    background-color: #F5D7E3;
-    /* border: 2px green solid; */
-}
-
-
 @media (max-width: 760px) {
     .toggle-button {
         display: flex;
@@ -191,14 +191,18 @@
         z-index: 1;
     }
 
+    .nav {
+        width: 100%;
+    }
     .nav-bar {
         flex-direction: column;
         height: 100%;
-
     }
 
     .nav-menu {
+        padding:0;
         flex-direction: column;
+        border: none;
         width:100%;
         display: none;
     }
@@ -213,8 +217,7 @@
     }
 
     .nav-menu.active {
-        z-index: 8;
-       display: flex;
+        display: flex;
     }
 
     .landing-page {
