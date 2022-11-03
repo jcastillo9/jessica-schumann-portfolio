@@ -1,6 +1,6 @@
 .contact {
     padding-top: 152px;
-
+    border: 2px solid red;
 }
 
 .contact-info {
@@ -9,14 +9,19 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    border: 2px solid blue;
+
 }
 
 .contact-text {
     margin: 3rem;
+    border: 2px solid orange;
+
 }
 
 .fa-brands {
     font-size: 2rem;
     color: black;
     margin: .25rem;
+    border: .5px solid green;
 }
