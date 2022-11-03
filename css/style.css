@@ -80,7 +80,6 @@
 .landing-page {
     display:flex;
     width: 100vw;
-    height: 90vh;
     padding-top: 152px;
     margin-bottom: 1.5rem;
 }
@@ -102,7 +101,8 @@
 }
 
 .horizontal-bar {
-    width: 95%;
+    width: 90%;
+    margin: auto;
     padding: auto;
     border-bottom-style: solid;
     border-bottom-width: 10px;
@@ -113,6 +113,7 @@
     width: 45%;
     display: flex;
     align-items: center;
+    padding: .5rem;
 }
 
 .image-holder{
@@ -233,64 +234,28 @@
     }
 
     .landing-page {
-        /* border: 2px red solid; */
-        flex-direction: column;
-        display: block;
-        padding-top: 113px;
-        margin-bottom: 0;
+        display:block;
     }
-
-    .landing-text, .landing-image {
-        width: 100%;
-    }
-
+    
     .landing-text {
-        height: 30%;
-        margin: 0;
-        padding: 2rem;
-        /* border: 2px solid blue; */
+        width: 100%;
+        margin: 3rem 0;
     }
-
-    .description {
-        margin: 2rem 4rem;
-        font-size: 15px;
-    }
-
+    
     .horizontal-bar {
+        width: 80%;
         margin: auto;
     }
-
+    
     .landing-image {
-        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
-
-}
-
-@media (max-width: 480px) {
-    .nav-container {
-        text-align: left;
+    
+    .image-holder{
+        margin: auto;
+        width: 350px;
+        height: 400px;
     }
-
-    .landing-page {
-        margin-bottom: 0;
-    }
-
-    .landing-text {
-        padding: 1rem;
-    }
-
-    .description {
-        margin: 1.5rem 3rem;
-        font-size: 12px;
-    }
-
-    .landing-image {
-        height: 70%;
-    }
-
-     .image-holder {
-        width: 250px;
-        height: 300px;
-    }
-
 }
