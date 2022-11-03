@@ -6,13 +6,19 @@
 .about-landing {
     display: flex;
     align-items: center;
+}
 
-    height: 70vh;
+.about-info {    
+    width: 50vw;
+    display: flex;
+    padding:5rem;
 }
 
 .about-img{
-    width: 45vw;
+    width: 50vw;
+    padding: 2rem;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -22,39 +28,12 @@
     height: 450px;
 }
 
-.about-info {    
-    width: 55vw;
-    display: flex;
-    padding:5rem;
-}
-
-@media (max-width: 480px) {
-    .about {
-        padding-top: 113px;
-    }
-    
+@media (max-width: 760px) {
     .about-landing {
         display: block;
     }
-    
-    .about-img{
-        width: 100vw;
-        height: 40vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .image {
-        width: 250px;
-        height: 300px;
-    }
-    
-    .about-info { 
-        width: 100vw;
-        height: 50vh;
-        font-size: 12px;
-        text-align: center;
-        padding: 0 3rem;
+
+    .about-info, .about-img {
+        width: 100%;
     }
 }
