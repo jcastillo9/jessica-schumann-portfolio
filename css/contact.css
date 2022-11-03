@@ -47,3 +47,16 @@
 .social-icons {
     padding: 1rem;
 }
+
+@media (max-width: 760px) {
+    .contact-cards {
+        width: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-cards {
+        width: 75%;
+        padding: 2rem;
+    }
+}
